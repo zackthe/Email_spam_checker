@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <script src="./app.js"></script>
+    <title>Edited app</title>
+</head>
+
+<body>
+    <section class="container mx-auto px-4">
+
+        <h1 class="text-center text-3xl font-bold p-3 mt-5">Check and optimize your send</h1>
+        <div class="p-16 grid grid-cols-2 justify-items-center justify-center">
+            <!-- BEGIN REMOVE SPAM WORDS -->
+            <div class="flex flex-col justify-center w-[30rem]">
+                <div class="flex flew-row justify-between items-center">
+                    <label class="text-center text font-bold pt-0 pb-5 mt-5 " for="tag-names">Remove spamy words:</label>
+                    <div class="flex flew-row gap-3">
+                        <select name="tag-names" id="tag-names" class="border-[2px] w-[4rem] h-[2rem] border-[#94a3b8] ">
+                            <option value=""></option>
+                            <option value="p">P</option>
+                            <option value="div">div</option>
+                        </select>
+                        <button class="p-1 border-[2px] w-[2.5rem] h-[2rem] btn-OK border-[#94a3b8]"></buttonclass>GO</button>
+                    </div>
+                </div>
+
+                <textarea
+                    class="p-6 drop-shadow-md rounded-md border-[1.5px] outline-blue-500 border-blue-500 w-[30rem] h-96 overflow-x-hidden bg-blue-50 max-w-lg whitespace-nowrap"
+                    id="text-area" placeholder="Put spam text here ..."></textarea>
+                <div class="flex justify-between gap-1 mt-[1.2rem]">
+                    <button
+                        class="p-1 drop-shadow-md border-[1px] rounded-sm5 border-[#334155] w-[8rem] btn-remove font-[500] bg-[#fecaca]">Remove
+                        Spam</button>
+                    <button
+                        class="drop-shadow-md border-[1px] rounded-sm border-[#334155] w-[8rem] btn-copy font-[500] bg-[#ccfbf1] ">Copy
+                        Text</button>
+                    <button
+                        class="drop-shadow-md border-[1px]  rounded-sm border-[#334155] w-[8rem] btn-shuffli font-[500] bg-[#ccfbf1] ">Shuffle</button>
+                </div>
+            </div>
+            <!-- END REMOVE SPAM WORDS -->
+
+            <!-- BEGIN SHUFFLE PARAMS  -->
+
+            <div class="mt-10">
+
+                <label class="text-center text font-bold p-2 pb-5 mt-5" for="tag-names"> Shuffle params:</label>
+
+                <div>
+                    <textarea
+                    class="p-6 drop-shadow-md rounded-md border-[1.5px] outline-blue-500 border-blue-500 w-[24rem] h-96 overflow-x-hidden bg-[#fdf4ff] max-w-lg whitespace-nowrap"
+                    id="text-area-params" placeholder="Put Params here ..."></textarea>
+                    <div class="flex justify-between gap-1 mt-[1.2rem]">
+                        <button
+                            class="drop-shadow-md border-[1px] p-1 rounded-sm border-[#334155] w-[8rem] btn-copy-params font-[500] bg-[#ccfbf1] ">Copy
+                            Text</button>
+                        <button
+                            class="drop-shadow-md border-[1px] rounded-sm border-[#334155] w-[8rem] btn-shuffli-params font-[500] bg-[#ccfbf1] ">Shuffle</button>
+                    </div>
+                </div>
+
+            </div> 
+            <!-- END SHUFFLE PARAMS  -->
+
+        </div>
+        <div>
+            <h4 class="text-center font-bold mt-10">Created by zakariae belkasmi</h4>
+        </div>
+
+    </section>
+</body>
+
+</html>
